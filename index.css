@@ -236,7 +236,7 @@ h1 {
   -moz-transform: skewX(-50deg);
   -o-transform: skewX(-50deg);
   -webkit-transform: skewX(-50deg);
-  transform: skewX(-50deg);
+  trans00: skewX(-50deg);
 }
 #kupasen-ugakimev > span.blink_on:after {
   transition: 1s linear;
@@ -322,6 +322,10 @@ h1 {
   li.fade {
     opacity: 1;
   }
+  .fade:not(.show) {
+    opacity: 1;
+}
+
   h1 {
     font-size: 30px;
   }
@@ -734,6 +738,77 @@ section .text-container .text-box h3 {
   text-transform: uppercase;
   font-weight: 300;
 }
+.icons{
+  width: 250px;
+  display: inline-flex;
+  padding: 15px 35px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  box-shadow: 0 14px 80px #a4643b;
+  text-decoration: none;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    -45deg,
+    #ff7700,
+    #ffd500,
+    #c87d5a,
+    #ff9d00
+  );
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+  cursor: pointer;
+}
+.biography {
+  text-align: center;
+  margin: 20px;
+}
+
+#sidebar-biography {
+  background-image: url("./images/009.jpg");
+  background-size: cover;
+  /* background: linear-gradient(rgb(236, 157, 89), rgb(255, 255, 255)); */
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  left: -100%;
+  top: 0px;
+  transition: left 0.3s linear;
+  z-index: 99999;
+  overflow: scroll;
+}
+
+#sidebar-biography.visible {
+  left: 0px;
+  transition: left 0.3s linear;
+}
+
+.sidebar-biography-btn {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+.sidebar-biography-btn img {
+  width: 35px;
+  cursor: pointer;
+}
+
+.biografy-btn {
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 36px;
+  border-radius: 50%;
+  top: calc(100% - 100px);
+  left: calc(100% - 100px);
+  color: white;
+  cursor: pointer;
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -742,12 +817,12 @@ section .text-container .text-box h3 {
 }
 
 .form a {
-  color: #000;
+  color: rgb(255, 255, 255);
   margin-top: 20px;
 }
 
 .ar_form p {
-  color: #230c01;
+  color: #ffffff;
   font-size: large;
 }
 
@@ -755,13 +830,15 @@ section .text-container .text-box h3 {
   width: 60%;
   border-radius: 10px;
   padding: 20px 30px;
-  box-shadow: 2px 1px 5px -1px #111;
+  box-shadow: 2px 1px 5px -1px rgb(205, 205, 205);
   text-align: center;
+  backdrop-filter: blur(20px);
 }
 
 .ar_form * {
   transition: 0.3s ease-in-out;
   box-sizing: border-box;
+  color: white;
 }
 
 .ar_form form {
@@ -785,19 +862,19 @@ section .text-container .text-box h3 {
 .ar_form form input[type="text"],
 .ar_form form input[type="password"] {
   border: 2px solid gray;
-  color: #230c01;
+  color: #d59476;
 }
 
 /* #03273D; */
 
 .ar_form form input[type="text"]:focus,
 .ar_form form input[type="password"]:focus {
-  border-color: #230c01;
+  border-color: #883b17;
   width: 100%;
 }
 
 .ar_form form input[type="submit"] {
-  background-color: #230c01;
+  background-color: #883d1b;
   color: white;
   width: 70%;
 }

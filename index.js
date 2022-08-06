@@ -99,3 +99,15 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+
+$(document).ready(function() {
+  $('#biografy-btn').click(function() {
+      $('#sidebar-biography').toggleClass('visible');
+  });
+});
+
+$(document).ready(function() {
+  $('#biography-sidebar-btn').click(function() {
+      $('#sidebar-biography').toggleClass('visible');
+  });
+});
