@@ -838,6 +838,11 @@ section .text-container .text-box h3 {
   text-align: center;
   backdrop-filter: blur(20px);
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  .ios.bg-overlay {
+      -webkit-backdrop-filter: blur(20px);
+  }
+}
 
 .ar_form * {
   transition: 0.3s ease-in-out;
