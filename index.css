@@ -784,7 +784,7 @@ section .text-container .text-box h3 {
   top: 0px;
   transition: left 0.3s linear;
   z-index: 999;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 #sidebar-biography.visible {
