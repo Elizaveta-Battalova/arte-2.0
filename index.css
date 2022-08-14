@@ -139,7 +139,7 @@ main {
   display: flex;
   flex: 1 0 auto;
   flex-direction: column;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   text-align: center;
 }
 
@@ -324,7 +324,7 @@ h1 {
   }
   .fade:not(.show) {
     opacity: 1;
-}
+  }
 
   h1 {
     font-size: 30px;
@@ -738,7 +738,7 @@ section .text-container .text-box h3 {
   text-transform: uppercase;
   font-weight: 300;
 }
-.icons{
+.icons {
   position: fixed;
   left: 93%;
   top: 85%;
@@ -764,7 +764,7 @@ section .text-container .text-box h3 {
   cursor: pointer;
   z-index: 99;
 }
-.icons img{
+.icons img {
   width: 60px;
 }
 .biography {
@@ -773,9 +773,22 @@ section .text-container .text-box h3 {
 }
 
 #sidebar-biography {
-  background-image: url("./images/009.jpg");
-  background-size: cover;
+  /* background-image: url("./images/009.jpg");
+  background-size: cover; */
   /* background: linear-gradient(rgb(236, 157, 89), rgb(255, 255, 255)); */
+  background: linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff,
+    #fff0de,
+    #fff2e3,
+    #ffffff,
+    #fff8f0,
+    #ffffff,
+    #fffafa
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   width: 100%;
   height: 100%;
   display: block;
@@ -811,7 +824,7 @@ section .text-container .text-box h3 {
   border-radius: 50%;
   top: calc(100% - 100px);
   left: calc(100% - 100px);
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 .form {
@@ -822,12 +835,12 @@ section .text-container .text-box h3 {
 }
 
 .form a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin-top: 20px;
 }
 
 .ar_form p {
-  color: #ffffff;
+  color: #000000;
   font-size: large;
 }
 
@@ -840,7 +853,7 @@ section .text-container .text-box h3 {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 3) {
   .ios.bg-overlay {
-      -webkit-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
   }
 }
 
@@ -918,7 +931,7 @@ footer {
   }
   section .container {
     margin: 0;
-}
+  }
   section .text-container {
     flex-direction: column;
   }
@@ -928,11 +941,11 @@ footer {
   .card {
     width: 100%;
   }
-  .icons{
+  .icons {
     left: 85%;
     top: 85%;
   }
-  .icons img{
+  .icons img {
     width: 50px;
   }
 }
