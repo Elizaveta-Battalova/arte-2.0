@@ -929,7 +929,7 @@ footer {
 }
 @media (max-width: 900px) {
   .video {
-    margin-top: 60px;
+    margin: 0;
   }
   main {
     margin-top: 0;
