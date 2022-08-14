@@ -11,19 +11,6 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    -45deg,
-    #ffffff,
-    #ffffff,
-    #fff0de,
-    #fff2e3,
-    #ffffff,
-    #fff8f0,
-    #ffffff,
-    #fffafa
-  );
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
 }
 body {
   min-height: 100vh;
@@ -135,14 +122,30 @@ nav {
   border: 1.5px solid #f2f5f7;
   transition: all ease-in-out 350ms;
 }
+
 main {
   display: flex;
   flex: 1 0 auto;
   flex-direction: column;
-  /* margin-top: 150px; */
   text-align: center;
+  background: linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff,
+    #fff0de,
+    #fff2e3,
+    #ffffff,
+    #fff8f0,
+    #ffffff,
+    #fffafa
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin-top: -310px;
 }
-
+.header-info {
+  margin-top: 70px;
+}
 .blick {
   margin-bottom: 50px;
 }
@@ -925,6 +928,12 @@ footer {
   flex: 0 0 auto;
 }
 @media (max-width: 900px) {
+  .video {
+    margin-top: 60px;
+  }
+  main {
+    margin-top: 0;
+  }
   section h1 {
     font-size: 2rem;
     text-align: center;
