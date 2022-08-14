@@ -11,6 +11,19 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  background: linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff,
+    #fff0de,
+    #fff2e3,
+    #ffffff,
+    #fff8f0,
+    #ffffff,
+    #fffafa
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 body {
   min-height: 100vh;
@@ -128,6 +141,7 @@ main {
   flex: 1 0 auto;
   flex-direction: column;
   text-align: center;
+  margin-top: 450px;
   background: linear-gradient(
     -45deg,
     #ffffff,
@@ -141,13 +155,12 @@ main {
   );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  margin-top: 350px;
+  z-index: 1;
 }
 video {
   position: absolute;
   width: 100%;
   top: -100px;
-  z-index: -10;
 }
 .blick {
   margin-bottom: 50px;
@@ -931,8 +944,11 @@ footer {
   flex: 0 0 auto;
 }
 @media (max-width: 900px) {
+  main {
+    margin-top: 300px;
+  }
   video {
-    top: 0;
+    top: 60px;
   }
   section h1 {
     font-size: 2rem;
