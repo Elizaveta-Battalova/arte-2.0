@@ -729,6 +729,9 @@ footer .bottom_content section {
   main {
     padding-top: 100px;
   }
+  .logo p {
+    font-size: 30px;
+  }
   .icons {
     left: 85%;
     top: 85%;
