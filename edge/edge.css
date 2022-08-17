@@ -620,6 +620,9 @@ footer {
   flex: 0 0 auto;
 }
 @media (max-width: 900px) {
+  main {
+    padding-top: 100px;
+  }
   .icons {
     left: 85%;
     top: 85%;
