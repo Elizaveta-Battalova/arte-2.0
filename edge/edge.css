@@ -152,7 +152,7 @@ main {
   flex-direction: row;
   box-shadow: 0 14px 80px rgb(34 35 58 / 20%);
   border-radius: 25px;
-  background-color: rgb(251, 247, 239);
+  background-color: transparent;
 }
 
 .card img {
@@ -218,7 +218,6 @@ main {
   box-shadow: 0 14px 80px rgb(34 35 58 / 20%);
   border-radius: 25px;
   width: 45%;
-  background-color: rgb(251, 247, 239);
 }
 .details {
   display: flex;
@@ -230,7 +229,6 @@ main {
   border-radius: 25px;
   color: black;
   text-align: center;
-  background-color: rgb(251, 247, 239);
 }
 
 section {
@@ -633,9 +631,10 @@ footer {
     flex-direction: column;
     width: 90%;
     align-items: center;
+    margin-bottom: 50px;
   }
   .card img {
-    width: -webkit-fill-available;
+    width: 100%;
   }
   .program {
     flex-direction: column;
@@ -644,5 +643,6 @@ footer {
   .program-list,
   .musicians {
     width: 100%;
+    margin-bottom: 50px;
   }
 }
