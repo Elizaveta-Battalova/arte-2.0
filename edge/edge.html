@@ -13,8 +13,8 @@
       name="Keywords"
       content="концерты классической музыки, музыка, классическая музыка, концерт, artemusicum."
     />
-    <link type="image/x-icon" href="./images/favicon.ico" rel="shortcut icon" />
-    <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
+    <link type="image/x-icon" href="../images/favicon.ico" rel="shortcut icon" />
+    <link type="Image/x-icon" href="../images/favicon.ico" rel="icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -55,10 +55,6 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap"
-      rel="stylesheet"
-    />
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
@@ -144,7 +140,7 @@
         style="position: fixed; left: -999px"
         alt=""
     /></noscript>
-    <link rel="stylesheet" href="../edge/edge.css" />
+    <link rel="stylesheet" href="edge.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -156,7 +152,9 @@
       </div> -->
       <nav class="header" id="navbar">
         <div class="logo">
-          <img src="../images/logo.png" alt="Logo Image" />
+          <a href="../index.html"
+                ><img src="../images/logo.png" alt="Logo Image" /></a>
+          
           <p>ARTEMUSICUM</p>
         </div>
         <div class="hamburger">
@@ -165,23 +163,22 @@
           <div class="line3"></div>
         </div>
         <ul class="nav-links">
-          <li><a href="../index.html">о нас</a></li>
-          <li><a href="#">отзывы</a></li>
-          <li><a href="#">галерея</a></li>
-          <li><a href="#">контакты</a></li>
-          <li><button class="afisha-button" href="#">афиша</button></li>
-          <li><button class="help-button" href="#">помощь</button></li>
+          <li><a class="nav-links-li-a" href="../index.html#about_us">о нас</a></li>
+          <li><a class="nav-links-li-a" href="../gallery/galleries-page/galleries-page.html">галерея</a></li>
+          <li><a class="nav-links-li-a" href="../index.html#contacts">контакты</a></li>
+          <li><a class="afisha-button" href="../index.html#hook">афиша</a></li>
+          <li><a class="help-button" href="mailto:support@artemusicum.com?subject=Обращение">помощь</a></li>
         </ul>
       </nav>
 
       <main>
         <div class="card">
-          <img src="edge.jpg" alt="" />
+          <img src="../images/edge.jpg" alt="" />
           <div class="card-info">
             <p class="date">9 декабря | 19:00</p>
             <p class="name">Эйнауди | На краю Вселенной</p>
             <p class="place">Москва | Московский планетарий</p>
-            <a class="performers" href="./mozart2502/simpleMusicAnsamble.html"
+            <a class="performers" href="../mozart2502/simpleMusicAnsamble.html"
               >Simple music ensemble</a
             >
             <button
@@ -216,7 +213,7 @@
                 <p class="name">Исполнители</p>
                 <a
                   class="performers"
-                  href="./mozart2502/simpleMusicAnsamble.html"
+                  href="../mozart2502/simpleMusicAnsamble.html"
                   >Simple music ensemble</a
                 >
               </div>
@@ -352,7 +349,7 @@
           </div>
         </div>
         <div class="copyright">
-          Copyright © 2021 aremusicum - All rights reserved
+          Copyright © 2022 aremusicum - All rights reserved
         </div>
       </footer>
       <script
