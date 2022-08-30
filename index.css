@@ -746,6 +746,12 @@ section .text-container .text-box h3 {
 .row{
   justify-content: center;
 }
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  background-image: url("https://img.icons8.com/ios/2x/double-left.png");
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  background-image: url("https://img.icons8.com/external-inkubators-detailed-outline-inkubators/2x/external-right-arrows-inkubators-detailed-outline-inkubators-7.png");
+}
 .reveal {
   position: relative;
   transform: translateY(150px);
