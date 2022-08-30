@@ -743,7 +743,9 @@ section .text-container .text-box h3 {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
+.row{
+  justify-content: center;
+}
 .reveal {
   position: relative;
   transform: translateY(150px);
