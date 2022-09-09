@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     -45deg,
     #ffffff,
     #ffffff,
@@ -24,7 +24,7 @@ body {
     #fffafa
   );
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite; */
 }
 body {
   min-height: 100vh;
@@ -184,21 +184,19 @@ video {
   margin-bottom: 50px;
 }
 .preloader {
-  /*фиксированное позиционирование*/
   position: fixed;
-  /* координаты положения */
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  /* фоновый цвет элемента */
   background: #ffda99;
-  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
   z-index: 1001;
 }
 
 .preloader__row {
   position: relative;
+background-image: url("./images/logo.png");
+background-size: contain;
   top: 50%;
   left: 50%;
   width: 70px;
@@ -209,7 +207,7 @@ video {
   animation: preloader-rotate 2s infinite linear;
 }
 
-.preloader__item {
+/* .preloader__item {
   position: absolute;
   display: inline-block;
   top: 0;
@@ -224,7 +222,7 @@ video {
   top: auto;
   bottom: 0;
   animation-delay: -1s;
-}
+} */
 
 @keyframes preloader-rotate {
   100% {
