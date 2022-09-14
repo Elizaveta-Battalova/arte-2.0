@@ -142,13 +142,14 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="preloader">
 
+      <!-- <div class="preloader">
         <div class="preloader__row">
           <div class="preloader__item"></div>
           <div class="preloader__item"></div>
         </div>
-      </div>
+      </div> -->
+
       <nav class="header" id="navbar">
         <div class="logo">
           <img src="./images/logo.png" alt="Logo Image" />
@@ -160,11 +161,11 @@
         </div>
         <ul class="nav-links">
           <li><a href="../index.html">о нас</a></li>
-          <li><a href="#">отзывы</a></li>
+          <li><a href="#rating">отзывы</a></li>
           <li><a href="#">галерея</a></li>
           <li><a href="#">контакты</a></li>
           <li><button class="afisha-button" href="#">афиша</button></li>
-          <li><button class="help-button" href="#">помощь</button></li>
+          <li><button class="help-button" href="mailto:support@artemusicum.com?subject=Обращение">помощь</button></li>
         </ul>
       </nav>
       <video autoplay muted playsinline>
@@ -176,7 +177,7 @@
           <span class="">начинается здесь</span>
         </div>
 
-        <div class="rating">
+        <div id="rating" class="rating">
           <p>оставьте Вашу оценку</p>
           <iframe
             src="https://yandex.ru/sprav/widget/rating-badge/16141274117"
@@ -192,52 +193,67 @@
           <div class="blog-slider__wrp swiper-wrapper">
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/gravity.jpg" alt="" />
+                <img src="./images/zariadie.jpg" alt="artemusicum" />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">9 сентября | 20:00</span>
-                <p>19:00 путешествие по планетарию</p>
-                <p>20:00 симфоническое шоу</p>
-                <div class="blog-slider__title">Гравитация</div>
-                <div class="blog-slider__text">
-                  Москва | Московский планетарий
+                <div class="card-info">
+                  <p class="date">17 сентября | 18:00</p>
+                  <a href="./ludovico-einaudi-redarena/ludovico-einaudi-redarena.html" class="name">Людовико Эйнауди. Seven days walking</a>
+                  <a class="place" href="https://zaryadyehall.com/">Москва | МКЗ Зарядье </a>
+                  <a class="performers" href="../mozart2502/simpleMusicAnsamble.html">Simple music ensemble</a>
+                  <button class="tickets-button" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9535287', type: 'session' }) }])">
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a>
                 </div>
-                <div class="blog-slider__text">
-                  <a href="./mozart2502/simpleMusicAnsamble.html"
-                  >Simple music ensemble</a
-                >
-                </div>
-
-                <button
-                  class="blog-slider__button"
-                  onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9884744', type: 'session' }) }])"
-                >
-                  КУПИТЬ БИЛЕТЫ
-                </button>
               </div>
             </div>
 
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/zariadie.jpg" alt="" />
+                <img src="./images/fotofactura-ludovico.jpg" alt="" />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">17 сентября | 18:00</span>
-                <div class="blog-slider__title">
-                  Людовико Эйнауди | Seven days walking
+                <div class="card-info">
+                  <p class="date">24 сентября | 20:00</p>
+                  <p class="name">Rock | Легенды</p>
+                  <a class="place" href="../fotofactura/fotofactura.html">Москва | FOTOFAKTURA</a>
+                  <a class="performers" href="../mozart2502/simpleMusicAnsamble.html"
+                    >Simple music ensemble</a
+                  >
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@10810646', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <a href="../pushkin-card/pushkin.html"><img class="pushkin" src="./images/pushkin-card-mini.jpg" alt=""></a>
                 </div>
-                <a
-                  class="blog-slider__text"
-                  style="color: black"
-                  href="https://zaryadyehall.com"
-                  >Москва | МКЗ Зарядье
-                </a>
-                <button
-                  class="blog-slider__button"
-                  onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9535287', type: 'session' }) }])"
-                >
-                  КУПИТЬ БИЛЕТЫ
-                </button>
+              </div>
+            </div>
+
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="./images/septlunch.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <div class="card-info">
+                  <p class="date">25 сентября | 14:00</p>
+                  <p class="name">Людовико Эйнауди. Seven days walking</p>
+                  <a class="place" href="https://simplemusic.art/house"
+                    >Москва | Дом Simple music</a
+                  >
+                  <a class="performers" href="../mozart2502/simpleMusicAnsamble.html"
+                    >Simple music ensemble</a
+                  >
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@10446953', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <!-- <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a> -->
+                </div>
               </div>
             </div>
           </div>
@@ -250,42 +266,77 @@
           <div class="blog-slider__wrp swiper-wrapper">
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/fotofactura-ludovico.jpg" alt="" />
+                <img src="./images/planets.jpg" alt="" />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">8 июля | 20:00</span>
-                <div class="blog-slider__title">
-                  Людовико Эйнауди | Seven days walking
+                <div class="card-info">
+                  <p class="date">7 октября | 19:00 путешествие по планетарию</p>
+                  <p class="date">20:00 симфоническое шоу</p>
+                  <p class="name">Густав Холст | Планеты</p>
+                  <a class="place" href="https://www.planetarium-moscow.ru/"
+                    >Москва | Московский планетарий</a
+                  >
+                  <a class="performers" href="../mozart2502/simpleMusicAnsamble.html"
+                    >Simple music ensemble</a
+                  >
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9680121', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a>
                 </div>
-                <div class="blog-slider__text">Москва | FOTOFAКTURA</div>
-                <a href="#" class="blog-slider__button">КУПИТЬ БИЛЕТЫ</a>
               </div>
             </div>
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/seasons.jpeg" alt="" />
+                <img src="./images/masterpiece.jpeg" alt="" />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">13 июля | 19:00</span>
-                <div class="blog-slider__title">
-                  Времена года | Чайковский. Вивальди
+                <div class="card-info">
+                  <p class="date">11 октября | 19:00</p>
+                  <p class="name">Шедевры в четыре руки</p>
+                  <p class="place">Москва | Соборная палата</p>
+                  <a class="performers" href="../mozart2502/simpleMusicAnsamble.html"
+                    >Simple music ensemble</a
+                  >
+                  <p class="date">Наталья Соколовская | Иван Соколов</p>
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9680322', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <!-- <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a> -->
                 </div>
-                <div class="blog-slider__text">Москва | Соборная палата</div>
-                <a href="#" class="blog-slider__button">КУПИТЬ БИЛЕТЫ</a>
               </div>
             </div>
 
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/gevorgian.jpeg" alt="" />
+                <img src="./images/harrypotter.jpg" alt="" />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">19 июля | 19:00</span>
-                <div class="blog-slider__title">Москва | Соборная палата</div>
-                <div class="blog-slider__text">
-                  Ева Геворгян | Скрябин. Рахманинов
+                <div class="card-info">
+                  <p class="date">28 октября | 20:00</p>
+                  <p class="name">
+                    ВСЕЛЕННАЯ<br />Гарри Поттер | Пираты карибского моря
+                  </p>
+                  <a class="place" href="https://hlebozavod9.ru/"
+                    >Москва | Хлебозавод №9</a
+                  >
+                  <a class="performers" href="../mozart2502/simpleMusicAnsamble.html"
+                    >Simple music ensemble</a
+                  >
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@10967592', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <!-- <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin-card-mini.jpg" alt=""></a> -->
                 </div>
-                <a href="#" class="blog-slider__button">КУПИТЬ БИЛЕТЫ</a>
               </div>
             </div>
           </div>
@@ -298,28 +349,51 @@
           <div class="blog-slider__wrp swiper-wrapper">
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/fotofactura-ludovico.jpg" alt="" />
+                <img src="./images/interstellar.jpg" alt="" />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">8 июля | 20:00</span>
-                <div class="blog-slider__title">
-                  Людовико Эйнауди | Seven days walking
+                <div class="card-info">
+                  <p class="date">4 ноября | 19:00 путешествие по планетарию</p>
+                  <p class="date">20:00 симфоническое шоу</p>
+                  <p class="name">ИНТЕРСТЕЛЛАР | Горизонт событий</p>
+                  <a class="place" href="https://www.planetarium-moscow.ru/"
+                    >Москва | Московский планетарий</a
+                  >
+                  <a class="performers" href="../mozart2502/simpleMusicAnsamble.html"
+                    >Simple music ensemble</a
+                  >
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9682192', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <!-- <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a> -->
                 </div>
-                <div class="blog-slider__text">Москва | FOTOFAКTURA</div>
-                <a href="#" class="blog-slider__button">КУПИТЬ БИЛЕТЫ</a>
               </div>
             </div>
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/seasons.jpeg" alt="" />
+                <img src="./images/Lucio-Vivaldi.jpg" alt="" />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">13 июля | 19:00</span>
-                <div class="blog-slider__title">
-                  Времена года | Чайковский. Вивальди
+                <div class="card-info">
+                  <p class="date">11 ноября | 19:00</p>
+                  <p class="name">Antonio Lucio Vivaldi | Шедевры</p>
+                  <p class="place">Москва | Соборная палата</p>
+                  <a class="performers" href="../mozart2502/simpleMusicAnsamble.html"
+                    >Simple music ensemble</a
+                  >
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9682709', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <a href="../pushkin-card/pushkin.html"
+                    ><img src="../images/pushkin3.png" alt=""
+                  /></a>
                 </div>
-                <div class="blog-slider__text">Москва | Соборная палата</div>
-                <a href="#" class="blog-slider__button">КУПИТЬ БИЛЕТЫ</a>
               </div>
             </div>
 
@@ -328,16 +402,60 @@
                 <img src="./images/gevorgian.jpeg" alt="" />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">19 июля | 19:00</span>
-                <div class="blog-slider__title">Москва | Соборная палата</div>
-                <div class="blog-slider__text">
-                  Ева Геворгян | Скрябин. Рахманинов
+                <div class="card-info">
+                  <p class="date">29 ноября | 19:00</p>
+                  <p class="name">Ева Геворгян | Скрябин. Рахманинов</p>
+                  <p class="place">Москва | Соборная палата</p>
+                  <a class="performers" href="../eva-gevorgian/eva-gevorgian.html"
+                    >Ева Геворгян</a
+                  >
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9165965', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <a href="../pushkin-card/pushkin.html"
+                    ><img src="../images/pushkin3.png" alt=""
+                  /></a>
                 </div>
-                <a href="#" class="blog-slider__button">КУПИТЬ БИЛЕТЫ</a>
               </div>
             </div>
           </div>
           <div class="blog-slider__pagination"></div>
+        </div>
+
+        <h2>Декабрь</h2>
+
+        <div class="blog-slider">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="./images/edge.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <img src="../images/edge.jpg" alt="" />
+                <div class="card-info">
+                  <p class="date">9 декабря | 19:00</p>
+                  <p class="name">Эйнауди | На краю Вселенной</p>
+                  <p class="place">Москва | Московский планетарий</p>
+                  <a class="performers" href="../mozart2502/simpleMusicAnsamble.html"
+                    >Simple music ensemble</a
+                  >
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@10556252', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div style="display: none;" class="blog-slider__pagination"></div>
         </div>
 
         <section>
@@ -429,7 +547,7 @@
                           <img
                             src="./images/montecarlo.png"
                             alt="..."
-                            class="img-fluid"
+                            class="swiper-slide-img"
                           />
                           <h3>Monte Carlo</h3>
                           <p>
@@ -442,7 +560,7 @@
                           <img
                             src="./images/asiahall.png"
                             alt="..."
-                            class="img-fluid"
+                            class="swiper-slide-img"
                           />
                           <h3>Asia Hall</h3>
                           <p>
@@ -455,7 +573,7 @@
                           <img
                             src="./images/kassir.png"
                             alt="..."
-                            class="img-fluid"
+                            class="swiper-slide-img"
                           />
                           <h3>Kassir.ru</h3>
                           <p>
@@ -468,7 +586,7 @@
                           <img
                             src="./images/ticketland.png"
                             alt="..."
-                            class="img-fluid"
+                            class="swiper-slide-img"
                           />
                           <h3>Ticket Land</h3>
                           <p>
@@ -481,7 +599,7 @@
                           <img
                             src="./images/yandex.png"
                             alt="..."
-                            class="img-fluid"
+                            class="swiper-slide-img"
                           />
                           <h3>Yandex</h3>
                           <p>
