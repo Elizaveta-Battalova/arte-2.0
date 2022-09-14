@@ -27,16 +27,13 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("toggle");
 });
 
-// navLinks.addEventListener("click", () => {
-//   navLinks.classList.remove("open");
-// });
-
-// window.addEventListener("click", function (event) {
-//   if (!event.target.matches(".nav-links")) {
-//     navLinks.classList.remove("open");
-//   }
-// });
-
+navLinks.addEventListener("click", () => {
+  navLinks.classList.remove("open");
+  links.forEach((link) => {
+    link.classList.toggle("fade");
+  });
+  hamburger.classList.toggle("toggle");
+});
 
 
 
