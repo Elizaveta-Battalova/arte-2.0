@@ -27,6 +27,19 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("toggle");
 });
 
+// navLinks.addEventListener("click", () => {
+//   navLinks.classList.remove("open");
+// });
+
+// window.addEventListener("click", function (event) {
+//   if (!event.target.matches(".nav-links")) {
+//     navLinks.classList.remove("open");
+//   }
+// });
+
+
+
+
 $(document).ready(function () {
   setInterval(function () {
     $("#kupasen-ugakimev>span").addClass("blink_on");

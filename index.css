@@ -535,6 +535,12 @@ h2{
   transform: translateY(25px);
   transition: all 0.4s;
 }
+.card a{
+  color: black;
+}
+.card a:hover{
+  color: black;
+}
 .card-info {
   width: 100%;
   display: flex;
