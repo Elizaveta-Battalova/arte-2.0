@@ -853,6 +853,10 @@ section .text-container .text-box h3 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+a[href^="tel"]{
+  color:black;
+  text-decoration:none;
+}
 .icons {
   position: fixed;
   left: 93%;
@@ -1042,7 +1046,13 @@ section .text-container .text-box h3 {
   top: 0;
   width: 100%;
 }
-
+.confidence{
+  color: #180900;
+  transition: .5s;
+}
+.confidence:hover{
+  color: #80421b;
+}
 footer {
   width: 100%;
   background-color: #210d00;
