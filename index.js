@@ -71,7 +71,7 @@ window.addEventListener("scroll", () => {
 });
 
 $(window).on("load", function () {
-  $(".preload").fadeOut().end().delay(500).fadeOut("slow");
+  $(".preloader").fadeOut().end().delay(500).fadeOut("slow");
 });
 
 function reveal() {
