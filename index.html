@@ -53,9 +53,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
@@ -145,14 +148,12 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="preloader">
+      <!-- <div class="preloader">
         <div class="preloader__row">
           <div class="preloader__item"></div>
           <div class="preloader__item"></div>
         </div>
-      </div>
-
-
+      </div> -->
 
       <nav class="header" id="navbar">
         <div class="logo">
@@ -165,7 +166,7 @@
           <div class="line3"></div>
         </div>
         <ul class="nav-links">
-          <li><a href="#aboutUs">о нас</a></li>
+          <li><a href="#about_us">о нас</a></li>
           <li><a href="#rating">отзывы</a></li>
           <li>
             <a href="./gallery/galleries-page/galleries-page.html">галерея</a>
@@ -173,17 +174,14 @@
           <li><a href="#contacts">контакты</a></li>
           <li><a href="#afisha">афиша</a></li>
           <li>
-            <button
-              class="help-button"
-              href="mailto:support@artemusicum.com?subject=Обращение"
-            >
+            <a href="mailto:support@artemusicum.com?subject=Обращение">
               помощь
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
-      <video autoplay muted playsinline>
-        <source src="fotofactura19.mp4" type="video/mp4" />
+      <video autoplay muted playsinline loop>
+        <source src="./video/pirates.mp4" type="video/mp4" />
       </video>
       <main>
         <h1>Ваше музыкальное путешествие</h1>
@@ -201,104 +199,6 @@
           ></iframe>
         </div>
         <div id="afisha"></div>
-        <h2>Сентябрь</h2>
-
-        <div class="blog-slider">
-          <div class="blog-slider__wrp swiper-wrapper">
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="./images/zariadie.jpg" alt="artemusicum" />
-              </div>
-              <div class="blog-slider__content">
-                <div class="card-info">
-                  <p class="date">17 сентября | 18:00</p>
-                  <a
-                    href="./ludovico-einaudi-redarena/ludovico-einaudi-redarena.html"
-                    class="name"
-                    >Людовико Эйнауди. Seven days walking</a
-                  >
-                  <a class="place" href="https://zaryadyehall.com/"
-                    >Москва | МКЗ Зарядье
-                  </a>
-                  <a
-                    class="performers"
-                    href="../mozart2502/simpleMusicAnsamble.html"
-                    >Simple music ensemble</a
-                  >
-                  <button
-                    class="tickets-button"
-                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9535287', type: 'session' }) }])"
-                  >
-                    КУПИТЬ БИЛЕТЫ
-                  </button>
-                  <a href="../pushkin-card/pushkin.html"
-                    ><img src="../images/pushkin3.png" alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="./images/fotofactura-ludovico.jpg" alt="" />
-              </div>
-              <div class="blog-slider__content">
-                <div class="card-info">
-                  <p class="date">24 сентября | 20:00</p>
-                  <p class="name">Rock | Легенды</p>
-                  <a class="place" href="../fotofactura/fotofactura.html"
-                    >Москва | FOTOFAKTURA</a
-                  >
-                  <a
-                    class="performers"
-                    href="../mozart2502/simpleMusicAnsamble.html"
-                    >Simple music ensemble</a
-                  >
-                  <button
-                    class="tickets-button"
-                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@10810646', type: 'session' }) }])"
-                  >
-                    КУПИТЬ БИЛЕТЫ
-                  </button>
-                  <a href="../pushkin-card/pushkin.html"
-                    ><img
-                      class="pushkin"
-                      src="./images/pushkin-card-mini.jpg"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="./images/septlunch.jpg" alt="" />
-              </div>
-              <div class="blog-slider__content">
-                <div class="card-info">
-                  <p class="date">25 сентября | 14:00</p>
-                  <p class="name">Людовико Эйнауди. Seven days walking</p>
-                  <a class="place" href="https://simplemusic.art/house"
-                    >Москва | Дом Simple music</a
-                  >
-                  <a
-                    class="performers"
-                    href="../mozart2502/simpleMusicAnsamble.html"
-                    >Simple music ensemble</a
-                  >
-                  <button
-                    class="tickets-button"
-                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@10446953', type: 'session' }) }])"
-                  >
-                    КУПИТЬ БИЛЕТЫ
-                  </button>
-                  <!-- <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="blog-slider__pagination"></div>
-        </div>
 
         <h2>Октябрь</h2>
 
@@ -306,53 +206,27 @@
           <div class="blog-slider__wrp swiper-wrapper">
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/planets.jpg" alt="" />
+                <a href="./simplelunch/simplelunch.html"
+                  ><img src="./images/lunch2310.jpg" alt="artemusicum"
+                /></a>
               </div>
               <div class="blog-slider__content">
                 <div class="card-info">
-                  <p class="date">
-                    7 октября | 19:00 путешествие по планетарию
-                  </p>
-                  <p class="date">20:00 симфоническое шоу</p>
-                  <p class="name">Густав Холст | Планеты</p>
-                  <a class="place" href="https://www.planetarium-moscow.ru/"
-                    >Москва | Московский планетарий</a
+                  <p class="date">23 октября | 14:00</p>
+                  <a class="name" href="./simplelunch/simplelunch.html"
+                    >Simple | Lunch</a
+                  >
+                  <a class="place" href="https://simplemusic.art/house"
+                    >Москва | Дом Simple music</a
                   >
                   <a
                     class="performers"
-                    href="../mozart2502/simpleMusicAnsamble.html"
+                    href="./mozart2502/simpleMusicAnsamble.html"
                     >Simple music ensemble</a
                   >
                   <button
                     class="tickets-button"
-                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9680121', type: 'session' }) }])"
-                  >
-                    КУПИТЬ БИЛЕТЫ
-                  </button>
-                  <a href="../pushkin-card/pushkin.html"
-                    ><img src="../images/pushkin3.png" alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="./images/masterpiece.jpeg" alt="" />
-              </div>
-              <div class="blog-slider__content">
-                <div class="card-info">
-                  <p class="date">11 октября | 19:00</p>
-                  <p class="name">Шедевры в четыре руки</p>
-                  <p class="place">Москва | Соборная палата</p>
-                  <a
-                    class="performers"
-                    href="../mozart2502/simpleMusicAnsamble.html"
-                    >Simple music ensemble</a
-                  >
-                  <p class="date">Наталья Соколовская | Иван Соколов</p>
-                  <button
-                    class="tickets-button"
-                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@9680322', type: 'session' }) }])"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@11175534', type: 'session' }) }])"
                   >
                     КУПИТЬ БИЛЕТЫ
                   </button>
@@ -363,20 +237,22 @@
 
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/harrypotter.jpg" alt="" />
+                <a href="./harrypotter/harrypotter.html"
+                  ><img src="./images/harrypotter.jpg" alt="artemusicum"
+                /></a>
               </div>
               <div class="blog-slider__content">
                 <div class="card-info">
                   <p class="date">28 октября | 20:00</p>
-                  <p class="name">
-                    ВСЕЛЕННАЯ<br />Гарри Поттер | Пираты карибского моря
-                  </p>
+                  <a class="name" href="./harrypotter/harrypotter.html"
+                    >ВСЕЛЕННАЯ<br />Гарри Поттер | Пираты карибского моря</a
+                  >
                   <a class="place" href="https://hlebozavod9.ru/"
                     >Москва | Хлебозавод №9</a
                   >
                   <a
                     class="performers"
-                    href="../mozart2502/simpleMusicAnsamble.html"
+                    href="./mozart2502/simpleMusicAnsamble.html"
                     >Simple music ensemble</a
                   >
                   <button
@@ -399,19 +275,23 @@
           <div class="blog-slider__wrp swiper-wrapper">
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/interstellar.jpg" alt="" />
+                <a href="./interstellar/interstellar.html"
+                  ><img src="./images/interstellar.jpg" alt="artemusicum"
+                /></a>
               </div>
               <div class="blog-slider__content">
                 <div class="card-info">
                   <p class="date">4 ноября | 19:00 путешествие по планетарию</p>
                   <p class="date">20:00 симфоническое шоу</p>
-                  <p class="name">ИНТЕРСТЕЛЛАР | Горизонт событий</p>
+                  <a class="name" href="./interstellar/interstellar.html"
+                    >Интерстеллар | Горизонт событий</a
+                  >
                   <a class="place" href="https://www.planetarium-moscow.ru/"
                     >Москва | Московский планетарий</a
                   >
                   <a
                     class="performers"
-                    href="../mozart2502/simpleMusicAnsamble.html"
+                    href="./mozart2502/simpleMusicAnsamble.html"
                     >Simple music ensemble</a
                   >
                   <button
@@ -426,16 +306,20 @@
             </div>
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/Lucio-Vivaldi.jpg" alt="" />
+                <a href="./vivaldi/vivaldi.html"
+                  ><img src="./images/Lucio-Vivaldi.jpg" alt="artemusicum"
+                /></a>
               </div>
               <div class="blog-slider__content">
                 <div class="card-info">
                   <p class="date">11 ноября | 19:00</p>
-                  <p class="name">Antonio Lucio Vivaldi | Шедевры</p>
+                  <a class="name" href="./vivaldi/vivaldi.html"
+                    >Antonio Lucio Vivaldi | Шедевры</a
+                  >
                   <p class="place">Москва | Соборная палата</p>
                   <a
                     class="performers"
-                    href="../mozart2502/simpleMusicAnsamble.html"
+                    href="./mozart2502/simpleMusicAnsamble.html"
                     >Simple music ensemble</a
                   >
                   <button
@@ -444,8 +328,8 @@
                   >
                     КУПИТЬ БИЛЕТЫ
                   </button>
-                  <a href="../pushkin-card/pushkin.html"
-                    ><img src="../images/pushkin3.png" alt=""
+                  <a href="./pushkin-card/pushkin.html"
+                    ><img src="./images/pushkin3.png" alt="artemusicum"
                   /></a>
                 </div>
               </div>
@@ -453,16 +337,20 @@
 
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/gevorgian.jpeg" alt="" />
+                <a href="./gevorgian/gevorgian.html"
+                  ><img src="./images/gevorgian.jpeg" alt="artemusicum"
+                /></a>
               </div>
               <div class="blog-slider__content">
                 <div class="card-info">
                   <p class="date">29 ноября | 19:00</p>
-                  <p class="name">Ева Геворгян | Скрябин. Рахманинов</p>
+                  <a class="name" href="./gevorgian/gevorgian.html"
+                    >Ева Геворгян | Скрябин. Рахманинов</a
+                  >
                   <p class="place">Москва | Соборная палата</p>
                   <a
                     class="performers"
-                    href="../eva-gevorgian/eva-gevorgian.html"
+                    href="./eva-gevorgian/eva-gevorgian.html"
                     >Ева Геворгян</a
                   >
                   <button
@@ -471,8 +359,8 @@
                   >
                     КУПИТЬ БИЛЕТЫ
                   </button>
-                  <a href="../pushkin-card/pushkin.html"
-                    ><img src="../images/pushkin3.png" alt=""
+                  <a href="./pushkin-card/pushkin.html"
+                    ><img src="./images/pushkin3.png" alt=""
                   /></a>
                 </div>
               </div>
@@ -487,17 +375,23 @@
           <div class="blog-slider__wrp swiper-wrapper">
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
-                <img src="./images/edge.jpg" alt="" />
+                <a href="./edge/edge.html"
+                  ><img src="./images/edge.jpg" alt="artemusicum"
+                /></a>
               </div>
               <div class="blog-slider__content">
-                <img src="../images/edge.jpg" alt="" />
                 <div class="card-info">
-                  <p class="date">9 декабря | 19:00</p>
-                  <p class="name">Эйнауди | На краю Вселенной</p>
+                  <p class="date">
+                    9 декабря | 19:00 путешествие по планетарию
+                  </p>
+                  <p class="date">20:00 симфоническое шоу</p>
+                  <a class="name" href="./edge/edge.html"
+                    >Эйнауди | На краю Вселенной</a
+                  >
                   <p class="place">Москва | Московский планетарий</p>
                   <a
                     class="performers"
-                    href="../mozart2502/simpleMusicAnsamble.html"
+                    href="./mozart2502/simpleMusicAnsamble.html"
                     >Simple music ensemble</a
                   >
                   <button
@@ -506,9 +400,132 @@
                   >
                     КУПИТЬ БИЛЕТЫ
                   </button>
-                  <a href="../pushkin-card/pushkin.html"
-                    ><img src="../images/pushkin3.png" alt=""
+                  <a href="./pushkin-card/pushkin.html"
+                    ><img src="./images/pushkin3.png" alt=""
                   /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <a href="./zimmersochi/zimmersochi.html"
+                  ><img src="./images/zimmersochi.jpg" alt="artemusicum"
+                /></a>
+              </div>
+              <div class="blog-slider__content">
+                <div class="card-info">
+                  <p class="date">15 декабря | 19:00</p>
+                  <a class="name" href="./zimmersochi/zimmersochi.html"
+                    ><span style="font-weight: 300; font-size: 20px"
+                      >большое симфоническое шоу</span
+                    ><br />Эйнауди. Мировые шедевры | SIMPLE MUSIC ENSEMBLE</a
+                  >
+                  <p class="place">Сочи | Зимний театр</p>
+                  <a
+                    class="performers"
+                    href="./mozart2502/simpleMusicAnsamble.html"
+                    >Simple music ensemble</a
+                  >
+                  <button
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@12595582', type: 'session' }) }])"
+                    class="tickets-button"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <!-- <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <a href="./christmas/christmas.html"
+                  ><img src="./images/christmas.jpg" alt="artemusicum"
+                /></a>
+              </div>
+              <div class="blog-slider__content">
+                <div class="card-info">
+                  <p class="date">21 декабря | 19:00</p>
+                  <a class="name" href="./christmas/christmas.html"
+                    >Рождественский концерт</a
+                  >
+                  <p class="place">Москва | Соборная палата</p>
+                  <a class="performers" href="http://moscowcamerata.com"
+                    >Камерный оркестр «МОСКОВСКАЯ КАМЕРАТА»</a
+                  >
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@12460264', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <!-- <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <a href="./vivaldiseasons/vivaldiseasons.html"
+                  ><img src="./images/vivaldiseasons.jpg" alt="artemusicum"
+                /></a>
+              </div>
+              <div class="blog-slider__content">
+                <div class="card-info">
+                  <p class="date">26 декабря | 19:00</p>
+                  <a class="name" href="./vivaldiseasons/vivaldiseasons.html"
+                    >VIVALDI | Времена года</a
+                  >
+                  <p class="place">Москва | Соборная палата</p>
+                  <a
+                    class="performers"
+                    href="./mozart2502/simpleMusicAnsamble.html"
+                    >Simple music ensemble</a
+                  >
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@12460594', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <!-- <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-slider__pagination"></div>
+        </div>
+
+        <p style="font-size: 40px">2023</p>
+
+        <h2>январь</h2>
+
+        <div class="blog-slider">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <a href="./soul/soul.html"
+                  ><img src="./images/soul.jpg" alt="artemusicum"
+                /></a>
+              </div>
+              <div class="blog-slider__content">
+                <div class="card-info">
+                  <p class="date">29 января | 19:00</p>
+                  <a class="name" href="./soul/soul.html"
+                    >«Душа и разум»<br />Александр Ключко и Жаклин Росас
+                  </a>
+                  <p class="place">Москва | Соборная палата</p>
+
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@12903710', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <!-- <a href="./pushkin-card/pushkin.html"
+                      ><img src="./images/pushkin3.png" alt=""
+                    /></a> -->
                 </div>
               </div>
             </div>
@@ -516,7 +533,70 @@
           <div style="display: none" class="blog-slider__pagination"></div>
         </div>
 
-        <section id="aboutUs">
+        <h2>февраль</h2>
+
+        <div class="blog-slider">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <a href="./piano/piano.html"
+                  ><img src="./images/piano.jpg" alt="artemusicum"
+                /></a>
+              </div>
+              <div class="blog-slider__content">
+                <div class="card-info">
+                  <p class="date">10 февраля | 19:00</p>
+                  <a class="name" href="./piano/piano.html"
+                    >Александр Рамм и Анна Одинцова<br />Cello & piano
+                  </a>
+                  <p class="place">Москва | Соборная палата</p>
+
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@12884296', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <!-- <a href="./pushkin-card/pushkin.html"
+                      ><img src="./images/pushkin3.png" alt=""
+                    /></a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <a href="./pratum/pratum.html"
+                  ><img src="./images/pratum.jpg" alt="artemusicum"
+                /></a>
+              </div>
+              <div class="blog-slider__content">
+                <div class="card-info">
+                  <p class="date">21 февраля | 19:00</p>
+                  <a class="name" href="./pratum/pratum.html"
+                    >Pratum Integrum<br />Легенды старого света
+                  </a>
+                  <a href="https://pratum.ru/" class="place"
+                    >Pratum Integrum
+                  </a>
+
+                  <button
+                    class="tickets-button"
+                    onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@12884603', type: 'session' }) }])"
+                  >
+                    КУПИТЬ БИЛЕТЫ
+                  </button>
+                  <!-- <a href="./pushkin-card/pushkin.html"
+                      ><img src="./images/pushkin3.png" alt=""
+                    /></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-slider__pagination"></div>
+        </div>
+
+        <section id="about_us">
           <div class="container reveal">
             <div class="container-fluid my-5">
               <div class="row">
@@ -527,8 +607,8 @@
                         <h3>ЧТО МЫ<br />ДЕЛАЕМ?</h3>
                       </div>
                       <p style="text-align: start">
-                        Создаем действительно необходимую нашему зрителю
-                        концертную программу, а так же встречи с людимыми
+                        Создаем действительно необходимые нашему зрителю
+                        концертные программы, а так же встречи с любимыми
                         музыкантами, артистами, дирижерами, актерами театра и
                         кино.
                       </p>
@@ -539,7 +619,7 @@
                         <h3>КТО МЫ?</h3>
                       </div>
                       <p style="text-align: center">
-                        Концертно-продюссерсий центр. Основан в 2021 году. В
+                        Концертно-продюсерский центр. Основан в 2021 году. В
                         команду ARTEMUSICUM входят профессиональные деятели сфер
                         искусств, музыки и театра.
                       </p>
@@ -570,9 +650,7 @@
               <div class="card">
                 <h3>БИЛЕТНЫЙ СТОЛ</h3>
                 <p>
-                  <a href="tel:+74952273125"
-                    >+7 (495) 227-31-55</a
-                  >
+                  <a href="tel:+74952273125">+7 (495) 227-31-55</a>
                 </p>
               </div>
               <div class="card">
@@ -603,12 +681,81 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <img
+                            src="./images/simple.png"
+                            alt="..."
+                            class="swiper-slide-img"
+                          />
+                          <p>
+                            наш музыкальный партнер<br />Уникальный музыкальный
+                            ансамбль Simple music ensemble
+                          </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/fotofacturalogo.png"
+                            alt="..."
+                            class="swiper-slide-img"
+                          />
+                          <h3></h3>
+                          <p>концертный зал<br />Дом культуры Fotofaktura</p>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/nazarov.png"
+                            alt="..."
+                            class="swiper-slide-img"
+                          />
+                          <p>
+                            прокат звукового оборудования и запись<br />концертов
+                            классической музыки
+                          </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/rozahall.png"
+                            alt="..."
+                            class="swiper-slide-img"
+                          />
+                          <p>
+                            концертный зал<br />Многофункциональный концертный
+                            комплекс «Роза Холл». Сочи
+                          </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/wintertheatre.png"
+                            alt="..."
+                            class="swiper-slide-img"
+                          />
+                          <p>
+                            концертный зал<br />Сочинское
+                            концертно-филармоническое объединение
+                          </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/zariadielogo.png"
+                            alt="..."
+                            class="swiper-slide-img"
+                          />
+                          <p>
+                            концертный зал<br />Московский концертный зал
+                            Зарядье
+                          </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
                             src="./images/kassir.png"
                             alt="..."
                             class="swiper-slide-img"
                           />
-                          <h3>Кассир.ру</h3>
-                          <p>наш билетный партнёр</p>
+                          <p>билетный партнёр</p>
                         </div>
 
                         <div class="swiper-slide">
@@ -617,8 +764,7 @@
                             alt="..."
                             class="swiper-slide-img"
                           />
-                          <h3>Орфей</h3>
-                          <p>наш информационный партнер Радиостанция Орфей</p>
+                          <p>информационный партнер<br />радиостанция Орфей</p>
                         </div>
 
                         <div class="swiper-slide">
@@ -627,10 +773,7 @@
                             alt="..."
                             class="swiper-slide-img"
                           />
-                          <h3>Asia Hall</h3>
-                          <p>
-                            наш партнер Культовый ресторан созданный для всех
-                          </p>
+                          <p>культовый ресторан созданный для всех</p>
                         </div>
 
                         <div class="swiper-slide">
@@ -639,8 +782,7 @@
                             alt="..."
                             class="swiper-slide-img"
                           />
-                          <h3>Тикетлэнд</h3>
-                          <p>наш билетный партнер</p>
+                          <p>главный билетный партнер</p>
                         </div>
 
                         <div class="swiper-slide">
@@ -649,8 +791,7 @@
                             alt="..."
                             class="swiper-slide-img"
                           />
-                          <h3>Яндекс Афиша</h3>
-                          <p>наш главный билетный партнер</p>
+                          <p>главный билетный партнер</p>
                         </div>
                       </div>
                       <div class="swiper-button-next"></div>
@@ -659,6 +800,54 @@
 
                     <div class="swiper-container product-thumbs">
                       <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/simplemini.png"
+                            alt="..."
+                            class="img-fluid"
+                          />
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/fotofacturamini.png"
+                            alt="..."
+                            class="img-fluid"
+                          />
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/nazarovmini.png"
+                            alt="..."
+                            class="img-fluid"
+                          />
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/rozahallmini.png"
+                            alt="..."
+                            class="img-fluid"
+                          />
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/wintertheatremini.png"
+                            alt="..."
+                            class="img-fluid"
+                          />
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img
+                            src="./images/zariadiemini.png"
+                            alt="..."
+                            class="img-fluid"
+                          />
+                        </div>
+
                         <div class="swiper-slide">
                           <img
                             src="./images/kassirmini.png"
@@ -707,7 +896,7 @@
 
         <div class="icons">
           <div id="biografy-btn">
-            <img src="./images/discount2.png" alt="" />
+            <img src="./images/flash-sale.png" alt="" />
           </div>
         </div>
 
@@ -746,7 +935,9 @@
           </div>
         </div>
 
-        <a class="confidence" href="./confidence/confidence.html">*политика конфиденциальности</a>
+        <a class="confidence" href="./confidence/confidence.html"
+          >*политика конфиденциальности</a
+        >
       </main>
 
       <footer>
@@ -757,9 +948,7 @@
           </div>
           <div class="section">
             <span><i class="fa fa-phone"></i></span>
-            <a href="tel:+74952273125"
-            >+7 (495) 227-31-55</a
-          >
+            <a href="tel:+74952273125">+7 (495) 227-31-55</a>
           </div>
           <div class="section">
             <span><i class="fa fa-envelope"></i></span>
