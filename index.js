@@ -27,15 +27,29 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("toggle");
 });
 
-navLinks.addEventListener("click", () => {
-  navLinks.classList.remove("open");
-  links.forEach((link) => {
-    link.classList.toggle("fade");
-  });
-  hamburger.classList.toggle("toggle");
-});
+function getWindowWidth() {
+  return window.innerWidth || document.body.clientWidth;
+}
 
+if (getWindowWidth() <= 800) {
+  window.onload = function () {
+    navLinks.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      links.forEach((link) => {
+        link.classList.toggle("fade");
+      });
+      hamburger.classList.toggle("toggle");
+    });
+  };
+}
 
+// navLinks.addEventListener("click", () => {
+//   navLinks.classList.remove("open");
+//   links.forEach((link) => {
+//     link.classList.toggle("fade");
+//   });
+//   hamburger.classList.toggle("toggle");
+// });
 
 $(document).ready(function () {
   setInterval(function () {
@@ -147,4 +161,3 @@ if ($(".product-left").length) {
   productSlider.controller.control = productThumbs;
   productThumbs.controller.control = productSlider;
 }
-/* 	product left end */
